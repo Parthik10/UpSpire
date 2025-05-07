@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UpSpire - AI-Powered EdTech Platform</title>
+  <meta name="description" content="Learn by Building. Guided by AI. Certified on Blockchain. The ultimate learning platform for B.Tech students in India.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%236366f1' d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-icon"><i class="fas fa-graduation-cap"></i></span>
+        UpSpire
+      </div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#courses">Learning Path</a>
+        <a href="#ai-professor">AI Professor</a>
+        <a href="#mentors">Mentors</a>
+        <a href="#tech-stack">Developers</a>
+      </div>
+      <div class="nav-actions">
+        <div class="login-wrapper">
+          <button class="btn btn-outline login-btn">
+            <i class="fas fa-user"></i> Login
+          </button>
+          <div class="login-dropdown">
+            <form class="login-form">
+              <h3>Welcome Back</h3>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="email" placeholder="Your email" required>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="password">Password</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="password" placeholder="Your password" required>
+                </div>
+              </div>
+              <div class="form-options">
+                <div class="remember-me">
+                  <input type="checkbox" id="remember">
+                  <label for="remember">Remember me</label>
+                </div>
+                <a href="#" class="forgot-password">Forgot password?</a>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Login</button>
+              <div class="login-footer">
+                <span>Don't have an account?</span>
+                <a href="#" class="signup-link">Sign up</a>
+              </div>
+            </form>
+            <form class="signup-form" style="display: none;">
+              <h3>Create Account</h3>
+              <div class="form-field">
+                <label for="signup-name">Full Name</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-user"></i>
+                  <input type="text" id="signup-name" placeholder="Your full name" required>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="signup-email">Email</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="signup-email" placeholder="Your email" required>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="signup-password">Password</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="signup-password" placeholder="Create password" required>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="signup-confirm">Confirm Password</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="signup-confirm" placeholder="Confirm password" required>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+              <div class="login-footer">
+                <span>Already have an account?</span>
+                <a href="#" class="login-link">Login</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <button class="btn btn-primary">Join Beta</button>
+      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+    
+        <h1>Learn by Building. Guided by AI. Certified on Blockchain.</h1>
+        <p>The ultimate learning platform for students in India. Master real-world skills with personalized AI guidance and earn verifiable certificates.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-large">Get Started <i class="fas fa-arrow-right"></i></button>
+          <a href="#features" class="text-link">Explore Features <i class="fas fa-chevron-down"></i></a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>5,000+</strong>
+            <span>Students</span>
+          </div>
+          <div class="hero-stat">
+            <strong>100+</strong>
+            <span>Projects</span>
+          </div>
+          <div class="hero-stat">
+            <strong>24/7</strong>
+            <span>Support</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="https://via.placeholder.com/600x400" alt="UpSpire Platform">
+          <div class="floating-card card-1">
+            <i class="fas fa-brain"></i>
+            <span>AI Guidance</span>
+          </div>
+          <div class="floating-card card-2">
+            <i class="fas fa-code"></i>
+            <span>Real Projects</span>
+          </div>
+          <div class="floating-card card-3">
+            <i class="fas fa-certificate"></i>
+            <span>Certification</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Statements Section -->
+  <section id="problems">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Problems We Solve</h2>
+        <p class="section-subtitle">Traditional education falls short in preparing students for the tech industry. Here's how we're changing that.</p>
+      </div>
+      <div class="problems-grid">
+        <div class="problem-card">
+          <div class="icon"><i class="fas fa-user-graduate"></i></div>
+          <h3>Lack of Mentorship</h3>
+          <p>Personal guidance at scale through our AI Professor</p>
+        </div>
+        <div class="problem-card">
+          <div class="icon"><i class="fas fa-certificate"></i></div>
+          <h3>Fake Certificates</h3>
+          <p>Blockchain-verified credentials that employers can trust</p>
+        </div>
+        <div class="problem-card">
+          <div class="icon"><i class="fas fa-code"></i></div>
+          <h3>Theory vs Practice</h3>
+          <p>Learn by building real projects, not just watching videos</p>
+        </div>
+        <div class="problem-card">
+          <div class="icon"><i class="fas fa-industry"></i></div>
+          <h3>Industry Gap</h3>
+          <p>Industry-relevant curriculum updated in real-time</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-divider">
+      <div class="divider-shape"></div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Key Features</h2>
+        <p class="section-subtitle">Our platform combines cutting-edge technology with proven learning methodologies to deliver an unmatched educational experience.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-feature="ai-professor">
+          <div class="feature-icon"><i class="fas fa-robot"></i></div>
+          <h3>AI Professor</h3>
+          <p>24/7 personalized guidance and instant doubt resolution</p>
+          <div class="feature-details">
+            <p>Our AI Professor analyzes your learning patterns and provides tailored guidance to help you master concepts faster. Get instant answers to your questions and receive personalized recommendations.</p>
+            <a href="#ai-professor" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="feature-card" data-feature="certificates">
+          <div class="feature-icon"><i class="fas fa-award"></i></div>
+          <h3>On-chain Certificates</h3>
+          <p>Tamper-proof credentials verified on blockchain</p>
+          <div class="feature-details">
+            <p>Every certificate issued is recorded on blockchain, making it immutable and easily verifiable by employers. Showcase your authentic achievements with confidence.</p>
+            <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="feature-card" data-feature="hackathons">
+          <div class="feature-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Weekly Hackathons</h3>
+          <p>Apply your skills in competitive environments</p>
+          <div class="feature-details">
+            <p>Participate in regular hackathons to test your skills against peers, build your portfolio, and win exciting prizes. Great way to showcase your abilities to potential employers.</p>
+            <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="feature-card" data-feature="mentorship">
+          <div class="feature-icon"><i class="fas fa-users"></i></div>
+          <h3>Peer Learning</h3>
+          <p>Collaborate with fellow students on projects</p>
+          <div class="feature-details">
+            <p>Connect with other learners, form study groups, and work on collaborative projects. Our platform facilitates peer-to-peer learning and networking opportunities.</p>
+            <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="feature-card" data-feature="projects">
+          <div class="feature-icon"><i class="fas fa-tasks"></i></div>
+          <h3>Project-Based Learning</h3>
+          <p>Build real-world applications from day one</p>
+          <div class="feature-details">
+            <p>No more theoretical knowledge without practical application. You'll build meaningful projects right from the beginning, creating a strong portfolio while you learn.</p>
+            <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="feature-card" data-feature="analytics">
+          <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Progress Analytics</h3>
+          <p>Visualize your learning journey and improvements</p>
+          <div class="feature-details">
+            <p>Track your progress with detailed analytics dashboards. Identify strengths and areas for improvement to optimize your learning journey.</p>
+            <a href="#" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Flow Section -->
+  <section id="courses">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Learning Pathway</h2>
+        <p class="section-subtitle">Follow our structured curriculum to become industry-ready in web development or blockchain technology.</p>
+      </div>
+      <div class="learning-paths">
+        <div class="path-selector">
+          <button class="path-btn active" data-path="web">Web Development</button>
+          <button class="path-btn" data-path="blockchain">Blockchain Technology</button>
+          <button class="path-btn" data-path="app">App Development</button>
+          <button class="path-btn" data-path="web3">Web3</button>
+          <button class="path-btn" data-path="ai">AI & ML</button>
+        </div>
+        <div class="path-content">
+          <div class="course-flow path-web active">
+            <div class="timeline">
+              <div class="timeline-item active" data-module="1">
+                <div class="timeline-icon"><i class="fab fa-html5"></i></div>
+                <div class="timeline-content">
+                  <h3>HTML & CSS Foundations</h3>
+                  <p>Build your first responsive website</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-module="2">
+                <div class="timeline-icon"><i class="fab fa-js"></i></div>
+                <div class="timeline-content">
+                  <h3>JavaScript Essentials</h3>
+                  <p>Add interactivity to your projects</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-module="3">
+                <div class="timeline-icon"><i class="fab fa-react"></i></div>
+                <div class="timeline-content">
+                  <h3>React Framework</h3>
+                  <p>Build dynamic single-page applications</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-module="4">
+                <div class="timeline-icon"><i class="fas fa-server"></i></div>
+                <div class="timeline-content">
+                  <h3>Backend Integration</h3>
+                  <p>Connect your frontend to APIs and databases</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-module="5">
+                <div class="timeline-icon"><i class="fas fa-project-diagram"></i></div>
+                <div class="timeline-content">
+                  <h3>Capstone Project</h3>
+                  <p>Build a complete web application from scratch</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-module="6">
+                <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+                <div class="timeline-content">
+                  <h3>Certification</h3>
+                  <p>Receive your blockchain-verified certificate</p>
+                </div>
+              </div>
+            </div>
+            <div class="module-details">
+              <div class="module-content active" id="module-1">
+                <div class="module-header">
+                  <h3>HTML & CSS Foundations</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 4 weeks</span>
+                </div>
+                <p>Start with the building blocks of the web. Learn HTML semantic elements and CSS styling to create responsive layouts. By the end, you'll build your first professional portfolio website.</p>
+                <ul>
+                  <li>HTML5 Semantic Markup</li>
+                  <li>CSS Flexbox & Grid</li>
+                  <li>Responsive Design Principles</li>
+                  <li>Project: Portfolio Website</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-1" value="4">
+                        <span>4 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-1" value="6" checked>
+                        <span>6 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-1" value="8">
+                        <span>8 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="module-2">
+                <div class="module-header">
+                  <h3>JavaScript Essentials</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 6 weeks</span>
+                </div>
+                <p>Master the fundamentals of JavaScript programming to add interactivity to your websites. You'll learn core concepts like DOM manipulation, event handling, and modern ES6+ features.</p>
+                <ul>
+                  <li>JavaScript Syntax & Data Types</li>
+                  <li>DOM Manipulation & Events</li>
+                  <li>Asynchronous JavaScript</li>
+                  <li>Project: Interactive Web App</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-2" value="4">
+                        <span>4 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-2" value="6" checked>
+                        <span>6 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-2" value="8">
+                        <span>8 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="module-3">
+                <div class="module-header">
+                  <h3>React Framework</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 8 weeks</span>
+                </div>
+                <p>Learn React, the most popular JavaScript library for building user interfaces. You'll create dynamic single-page applications with component-based architecture.</p>
+                <ul>
+                  <li>React Components & Props</li>
+                  <li>State Management</li>
+                  <li>Hooks & Context API</li>
+                  <li>Project: React Dashboard</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-3" value="6">
+                        <span>6 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-3" value="8" checked>
+                        <span>8 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-3" value="10">
+                        <span>10 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="module-4">
+                <div class="module-header">
+                  <h3>Backend Integration</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 6 weeks</span>
+                </div>
+                <p>Connect your frontend applications to backend services. Learn to work with RESTful APIs, handle data persistence, and implement authentication.</p>
+                <ul>
+                  <li>API Integration</li>
+                  <li>Authentication & Authorization</li>
+                  <li>Database Basics</li>
+                  <li>Project: Full-Stack Application</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-4" value="4">
+                        <span>4 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-4" value="6" checked>
+                        <span>6 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-4" value="8">
+                        <span>8 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="module-5">
+                <div class="module-header">
+                  <h3>Capstone Project</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 10 weeks</span>
+                </div>
+                <p>Apply everything you've learned to build a complete web application from scratch. Work on a real-world project with guidance from your AI Professor.</p>
+                <ul>
+                  <li>Project Planning & Architecture</li>
+                  <li>Development & Testing</li>
+                  <li>Deployment & CI/CD</li>
+                  <li>Final Presentation</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-5" value="8">
+                        <span>8 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-5" value="10" checked>
+                        <span>10 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-5" value="12">
+                        <span>12 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="module-6">
+                <div class="module-header">
+                  <h3>Certification</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 2 weeks</span>
+                </div>
+                <p>Complete your journey by receiving a blockchain-verified certificate that showcases your skills and accomplishments.</p>
+                <ul>
+                  <li>Final Assessment</li>
+                  <li>Portfolio Review</li>
+                  <li>Certificate Generation</li>
+                  <li>Career Guidance</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-6" value="1">
+                        <span>1 week</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-6" value="2" checked>
+                        <span>2 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-module-6" value="3">
+                        <span>3 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="course-flow path-blockchain">
+            <div class="timeline">
+              <div class="timeline-item" data-blockchain-module="1">
+                <div class="timeline-icon"><i class="fas fa-link"></i></div>
+                <div class="timeline-content">
+                  <h3>Blockchain Fundamentals</h3>
+                  <p>Understand the core concepts of blockchain technology</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-blockchain-module="2">
+                <div class="timeline-icon"><i class="fas fa-code"></i></div>
+                <div class="timeline-content">
+                  <h3>Smart Contract Development</h3>
+                  <p>Learn Solidity programming language</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-blockchain-module="3">
+                <div class="timeline-icon"><i class="fab fa-ethereum"></i></div>
+                <div class="timeline-content">
+                  <h3>Ethereum Development</h3>
+                  <p>Build decentralized applications on Ethereum</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-blockchain-module="4">
+                <div class="timeline-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="timeline-content">
+                  <h3>Security & Best Practices</h3>
+                  <p>Secure your blockchain applications</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-blockchain-module="5">
+                <div class="timeline-icon"><i class="fas fa-coins"></i></div>
+                <div class="timeline-content">
+                  <h3>Tokenomics & DeFi</h3>
+                  <p>Understand decentralized finance concepts</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-blockchain-module="6">
+                <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+                <div class="timeline-content">
+                  <h3>Final Project & Certification</h3>
+                  <p>Create a real-world blockchain application</p>
+                </div>
+              </div>
+            </div>
+            <div class="module-details">
+              <div class="module-content active" id="blockchain-module-1">
+                <div class="module-header">
+                  <h3>Blockchain Fundamentals</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 5 weeks</span>
+                </div>
+                <p>Dive into the world of blockchain with a comprehensive introduction to distributed ledger technology, consensus mechanisms, and cryptographic principles that power blockchain systems.</p>
+                <ul>
+                  <li>Blockchain Architecture & History</li>
+                  <li>Consensus Algorithms (PoW, PoS)</li>
+                  <li>Cryptography & Hashing</li>
+                  <li>Project: Build a Simple Blockchain</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-blockchain-1" value="3">
+                        <span>3 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-blockchain-1" value="5" checked>
+                        <span>5 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-blockchain-1" value="7">
+                        <span>7 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <!-- Other blockchain module details will be shown/hidden via JavaScript -->
+            </div>
+          </div>
+          
+          <div class="course-flow path-app">
+            <div class="timeline">
+              <div class="timeline-item" data-app-module="1">
+                <div class="timeline-icon"><i class="fas fa-mobile-alt"></i></div>
+                <div class="timeline-content">
+                  <h3>Mobile UI Fundamentals</h3>
+                  <p>Design principles for mobile interfaces</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-app-module="2">
+                <div class="timeline-icon"><i class="fab fa-react"></i></div>
+                <div class="timeline-content">
+                  <h3>React Native Basics</h3>
+                  <p>Cross-platform mobile development</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-app-module="3">
+                <div class="timeline-icon"><i class="fas fa-database"></i></div>
+                <div class="timeline-content">
+                  <h3>State Management & APIs</h3>
+                  <p>Build data-driven mobile applications</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-app-module="4">
+                <div class="timeline-icon"><i class="fas fa-cogs"></i></div>
+                <div class="timeline-content">
+                  <h3>Native Device Features</h3>
+                  <p>Leverage camera, GPS, and device sensors</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-app-module="5">
+                <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
+                <div class="timeline-content">
+                  <h3>App Deployment</h3>
+                  <p>Publishing to app stores and maintenance</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-app-module="6">
+                <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+                <div class="timeline-content">
+                  <h3>Certification</h3>
+                  <p>Build a production-ready mobile app</p>
+                </div>
+              </div>
+            </div>
+            <div class="module-details">
+              <div class="module-content active" id="app-module-1">
+                <div class="module-header">
+                  <h3>Mobile UI Fundamentals</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 4 weeks</span>
+                </div>
+                <p>Master the fundamentals of mobile user interface design and development. Learn how to create intuitive and engaging experiences for iOS and Android platforms.</p>
+                <ul>
+                  <li>Mobile Design Principles</li>
+                  <li>Responsive Layouts for Mobile</li>
+                  <li>Gesture-Based Interactions</li>
+                  <li>Project: Mobile App Prototype</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-1" value="2">
+                        <span>2 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-1" value="4" checked>
+                        <span>4 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-1" value="6">
+                        <span>6 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="app-module-2">
+                <div class="module-header">
+                  <h3>React Native Basics</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 6 weeks</span>
+                </div>
+                <p>Learn React Native to build cross-platform mobile applications for iOS and Android using a single codebase. Develop skills to create native-like apps with JavaScript.</p>
+                <ul>
+                  <li>React Native Components</li>
+                  <li>Navigation & Routing</li>
+                  <li>Styling & Animations</li>
+                  <li>Project: Social Media App</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-2" value="4">
+                        <span>4 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-2" value="6" checked>
+                        <span>6 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-2" value="8">
+                        <span>8 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="app-module-3">
+                <div class="module-header">
+                  <h3>State Management & APIs</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 5 weeks</span>
+                </div>
+                <p>Master advanced state management techniques and learn to connect your mobile applications to backend services and external APIs.</p>
+                <ul>
+                  <li>Redux & Context API</li>
+                  <li>REST & GraphQL Integration</li>
+                  <li>Authentication Flows</li>
+                  <li>Project: E-commerce Mobile App</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-3" value="3">
+                        <span>3 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-3" value="5" checked>
+                        <span>5 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-3" value="7">
+                        <span>7 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="app-module-4">
+                <div class="module-header">
+                  <h3>Native Device Features</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 6 weeks</span>
+                </div>
+                <p>Learn to integrate native device features like camera, geolocation, sensors, and notifications to create a fully-featured mobile experience.</p>
+                <ul>
+                  <li>Camera & Image Handling</li>
+                  <li>Geolocation & Maps</li>
+                  <li>Push Notifications</li>
+                  <li>Project: Location-Based App</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-4" value="4">
+                        <span>4 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-4" value="6" checked>
+                        <span>6 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-4" value="8">
+                        <span>8 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="app-module-5">
+                <div class="module-header">
+                  <h3>App Deployment</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 4 weeks</span>
+                </div>
+                <p>Learn the processes and requirements to publish your applications to the Apple App Store and Google Play Store, including app optimization and maintenance.</p>
+                <ul>
+                  <li>App Store Guidelines</li>
+                  <li>CI/CD for Mobile Apps</li>
+                  <li>Analytics & Monitoring</li>
+                  <li>Project: App Store Submission</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-5" value="2">
+                        <span>2 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-5" value="4" checked>
+                        <span>4 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-5" value="6">
+                        <span>6 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="app-module-6">
+                <div class="module-header">
+                  <h3>Certification</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 7 weeks</span>
+                </div>
+                <p>Apply everything you've learned to build a comprehensive, production-ready mobile application. Upon successful completion, receive your blockchain-verified certificate.</p>
+                <ul>
+                  <li>Capstone Project Development</li>
+                  <li>Performance Optimization</li>
+                  <li>Testing & Quality Assurance</li>
+                  <li>Final Review & Certification</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-6" value="5">
+                        <span>5 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-6" value="7" checked>
+                        <span>7 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-app-6" value="9">
+                        <span>9 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Web3 Path -->
+          <div class="course-flow path-web3">
+            <div class="timeline">
+              <div class="timeline-item" data-web3-module="1">
+                <div class="timeline-icon"><i class="fas fa-network-wired"></i></div>
+                <div class="timeline-content">
+                  <h3>Web3 Foundations</h3>
+                  <p>Understanding decentralized internet</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-web3-module="2">
+                <div class="timeline-icon"><i class="fas fa-wallet"></i></div>
+                <div class="timeline-content">
+                  <h3>Wallet Integration</h3>
+                  <p>Connect apps to blockchain wallets</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-web3-module="3">
+                <div class="timeline-icon"><i class="fas fa-cubes"></i></div>
+                <div class="timeline-content">
+                  <h3>Smart Contract Interaction</h3>
+                  <p>Frontend integration with smart contracts</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-web3-module="4">
+                <div class="timeline-icon"><i class="fas fa-database"></i></div>
+                <div class="timeline-content">
+                  <h3>Decentralized Storage</h3>
+                  <p>IPFS, Filecoin, and Arweave</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-web3-module="5">
+                <div class="timeline-icon"><i class="fas fa-coins"></i></div>
+                <div class="timeline-content">
+                  <h3>NFTs & Tokenization</h3>
+                  <p>Create and integrate digital assets</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-web3-module="6">
+                <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+                <div class="timeline-content">
+                  <h3>Certification</h3>
+                  <p>Build a complete Web3 application</p>
+                </div>
+              </div>
+            </div>
+            <div class="module-details">
+              <div class="module-content active" id="web3-module-1">
+                <div class="module-header">
+                  <h3>Web3 Foundations</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 5 weeks</span>
+                </div>
+                <p>Dive into the fundamentals of Web3 and decentralized internet. Learn about blockchain technology, decentralized applications (dApps), and the new web paradigm.</p>
+                <ul>
+                  <li>Web3 Architecture & Philosophy</li>
+                  <li>Blockchain Fundamentals</li>
+                  <li>Crypto Wallets & Identity</li>
+                  <li>Project: Simple dApp Interface</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-1" value="3">
+                        <span>3 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-1" value="5" checked>
+                        <span>5 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-1" value="7">
+                        <span>7 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="web3-module-2">
+                <div class="module-header">
+                  <h3>Wallet Integration</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 4 weeks</span>
+                </div>
+                <p>Learn to integrate cryptocurrency wallets into web applications, enabling users to connect to blockchain networks and perform transactions.</p>
+                <ul>
+                  <li>Web3.js & Ethers.js Libraries</li>
+                  <li>MetaMask & WalletConnect</li>
+                  <li>Transaction Signing & Verification</li>
+                  <li>Project: Wallet-Connected Web App</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-2" value="2">
+                        <span>2 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-2" value="4" checked>
+                        <span>4 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-2" value="6">
+                        <span>6 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="web3-module-3">
+                <div class="module-header">
+                  <h3>Smart Contract Interaction</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 6 weeks</span>
+                </div>
+                <p>Master the integration between frontend applications and blockchain smart contracts. Learn to call contract functions, send transactions, and handle events.</p>
+                <ul>
+                  <li>Smart Contract ABIs</li>
+                  <li>Reading & Writing to Contracts</li>
+                  <li>Event Listening & Subscriptions</li>
+                  <li>Project: Decentralized Exchange Interface</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-3" value="3">
+                        <span>3 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-3" value="5" checked>
+                        <span>5 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-3" value="7">
+                        <span>7 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="web3-module-4">
+                <div class="module-header">
+                  <h3>Decentralized Storage</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 5 weeks</span>
+                </div>
+                <p>Explore decentralized storage solutions that replace traditional centralized databases and file storage. Learn to store and retrieve data using distributed systems.</p>
+                <ul>
+                  <li>IPFS for File Storage</li>
+                  <li>Filecoin & Arweave Integration</li>
+                  <li>OrbitDB & Gun.js for Databases</li>
+                  <li>Project: Decentralized Media Platform</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-4" value="3">
+                        <span>3 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-4" value="5" checked>
+                        <span>5 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-4" value="7">
+                        <span>7 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="web3-module-5">
+                <div class="module-header">
+                  <h3>NFTs & Tokenization</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 6 weeks</span>
+                </div>
+                <p>Understand non-fungible tokens (NFTs) and tokenization concepts. Learn to create, deploy, and integrate NFTs into web applications.</p>
+                <ul>
+                  <li>ERC-721 & ERC-1155 Standards</li>
+                  <li>NFT Minting & Metadata</li>
+                  <li>Marketplaces & Trading</li>
+                  <li>Project: NFT Collection & Marketplace</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-5" value="3">
+                        <span>3 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-5" value="5" checked>
+                        <span>5 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-5" value="7">
+                        <span>7 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="web3-module-6">
+                <div class="module-header">
+                  <h3>Certification</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 8 weeks</span>
+                </div>
+                <p>Apply everything you've learned to build a comprehensive, functional Web3 application. Upon successful completion, receive your blockchain-verified certificate.</p>
+                <ul>
+                  <li>Full-Stack Web3 Development</li>
+                  <li>Gas Optimization</li>
+                  <li>Security Best Practices</li>
+                  <li>Final Project & Certification</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-6" value="5">
+                        <span>5 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-6" value="7" checked>
+                        <span>7 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-web3-6" value="9">
+                        <span>9 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- AI & ML Path -->
+          <div class="course-flow path-ai">
+            <div class="timeline">
+              <div class="timeline-item" data-ai-module="1">
+                <div class="timeline-icon"><i class="fas fa-calculator"></i></div>
+                <div class="timeline-content">
+                  <h3>Python & Data Science</h3>
+                  <p>Foundations for AI development</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-ai-module="2">
+                <div class="timeline-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="timeline-content">
+                  <h3>Machine Learning Basics</h3>
+                  <p>Algorithms and statistical models</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-ai-module="3">
+                <div class="timeline-icon"><i class="fas fa-brain"></i></div>
+                <div class="timeline-content">
+                  <h3>Neural Networks</h3>
+                  <p>Deep learning fundamentals</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-ai-module="4">
+                <div class="timeline-icon"><i class="fas fa-image"></i></div>
+                <div class="timeline-content">
+                  <h3>Computer Vision & NLP</h3>
+                  <p>Process images and human language</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-ai-module="5">
+                <div class="timeline-icon"><i class="fas fa-cogs"></i></div>
+                <div class="timeline-content">
+                  <h3>AI Deployment</h3>
+                  <p>Productionize AI models</p>
+                </div>
+              </div>
+              <div class="timeline-item" data-ai-module="6">
+                <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+                <div class="timeline-content">
+                  <h3>Certification</h3>
+                  <p>Build a real-world AI application</p>
+                </div>
+              </div>
+            </div>
+            <div class="module-details">
+              <div class="module-content active" id="ai-module-1">
+                <div class="module-header">
+                  <h3>Python & Data Science</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 5 weeks</span>
+                </div>
+                <p>Master Python programming and data science fundamentals that form the backbone of AI and ML development. Learn to manipulate and analyze data effectively.</p>
+                <ul>
+                  <li>Python Programming</li>
+                  <li>NumPy & Pandas Libraries</li>
+                  <li>Data Visualization with Matplotlib</li>
+                  <li>Project: Data Analysis Dashboard</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-1" value="3">
+                        <span>3 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-1" value="5" checked>
+                        <span>5 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-1" value="7">
+                        <span>7 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="ai-module-2">
+                <div class="module-header">
+                  <h3>Machine Learning Basics</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 6 weeks</span>
+                </div>
+                <p>Learn the foundational algorithms and concepts of machine learning, including supervised and unsupervised learning approaches.</p>
+                <ul>
+                  <li>Regression & Classification</li>
+                  <li>Decision Trees & Random Forests</li>
+                  <li>Clustering & Dimensionality Reduction</li>
+                  <li>Project: Predictive Analytics Model</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-2" value="3">
+                        <span>3 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-2" value="5" checked>
+                        <span>5 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-2" value="7">
+                        <span>7 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="ai-module-3">
+                <div class="module-header">
+                  <h3>Neural Networks</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 7 weeks</span>
+                </div>
+                <p>Explore deep learning through neural networks. Understand the mathematics and architectures that power modern AI systems.</p>
+                <ul>
+                  <li>Perceptrons & Backpropagation</li>
+                  <li>CNNs & RNNs</li>
+                  <li>TensorFlow & PyTorch</li>
+                  <li>Project: Image Classifier</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-3" value="3">
+                        <span>3 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-3" value="5" checked>
+                        <span>5 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-3" value="7">
+                        <span>7 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="ai-module-4">
+                <div class="module-header">
+                  <h3>Computer Vision & NLP</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 8 weeks</span>
+                </div>
+                <p>Master specialized AI domains including computer vision for image processing and natural language processing for text understanding.</p>
+                <ul>
+                  <li>Image Recognition & Object Detection</li>
+                  <li>Text Processing & Sentiment Analysis</li>
+                  <li>Transformers & BERT Models</li>
+                  <li>Project: Multi-modal AI Application</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-4" value="3">
+                        <span>3 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-4" value="5" checked>
+                        <span>5 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-4" value="7">
+                        <span>7 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="ai-module-5">
+                <div class="module-header">
+                  <h3>AI Deployment</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 5 weeks</span>
+                </div>
+                <p>Learn to deploy and scale AI models in production environments. Master the DevOps aspects of machine learning systems.</p>
+                <ul>
+                  <li>Model Optimization & Compression</li>
+                  <li>API Development with Flask/FastAPI</li>
+                  <li>Containerization & Cloud Deployment</li>
+                  <li>Project: Scalable AI Service</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-5" value="3">
+                        <span>3 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-5" value="5" checked>
+                        <span>5 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-5" value="7">
+                        <span>7 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+              <div class="module-content" id="ai-module-6">
+                <div class="module-header">
+                  <h3>Certification</h3>
+                  <span class="duration"><i class="fas fa-clock"></i> 8 weeks</span>
+                </div>
+                <p>Apply everything you've learned to build a comprehensive, functional AI application. Upon successful completion, receive your blockchain-verified certificate.</p>
+                <ul>
+                  <li>End-to-End AI System Design</li>
+                  <li>Model Evaluation & Improvement</li>
+                  <li>Ethical AI & Bias Mitigation</li>
+                  <li>Final Project & Certification</li>
+                </ul>
+                <div class="module-footer">
+                  <div class="difficulty">
+                    <span class="label">Difficulty:</span>
+                    <div class="difficulty-level">
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                      <span class="filled"></span>
+                    </div>
+                  </div>
+                  <div class="module-options">
+                    <span class="option-label">Duration:</span>
+                    <div class="time-options">
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-6" value="5">
+                        <span>5 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-6" value="7" checked>
+                        <span>7 weeks</span>
+                      </label>
+                      <label class="time-option">
+                        <input type="radio" name="duration-ai-6" value="9">
+                        <span>9 weeks</span>
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" class="btn btn-sm">Preview Module</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="section-divider">
+      <div class="divider-shape alt"></div>
+    </div>
+  </section>
+
+  <!-- AI Professor Section -->
+  <section id="ai-professor">
+    <div class="container">
+      <div class="ai-content">
+        <div class="section-header">
+          <h2 class="section-title"><i class="fas fa-robot ai-icon"></i> Meet Your AI Professor</h2>
+          <p class="section-subtitle">Available 24/7 to guide your learning journey, provide instant feedback, and answer your questions.</p>
+        </div>
+        <div class="ai-features">
+          <div class="ai-feature">
+            <i class="fas fa-comments"></i>
+            <h3>Instant Doubt Resolution</h3>
+            <p>Get your programming questions answered immediately</p>
+          </div>
+          <div class="ai-feature">
+            <i class="fas fa-code"></i>
+            <h3>Code Reviews</h3>
+            <p>Receive detailed feedback on your code quality</p>
+          </div>
+          <div class="ai-feature">
+            <i class="fas fa-road"></i>
+            <h3>Personalized Learning Path</h3>
+            <p>Customized curriculum based on your progress</p>
+          </div>
+        </div>
+      </div>
+      <div class="chat-demo">
+        <div class="chat-container">
+          <div class="chat-header">
+            <div class="chat-avatar">
+              <div class="avatar-icon-container">
+                <i class="fas fa-robot avatar-icon"></i>
+              </div>
+            </div>
+            <div class="chat-title">
+              <h3>AI Professor</h3>
+              <span class="status"><span class="status-dot"></span> Online</span>
+            </div>
+          </div>
+          <div class="chat-messages">
+            <div class="message ai">
+              <p>Hello! I'm your AI Professor. How can I help you today?</p>
+            </div>
+            <div class="message user">
+              <p>I'm having trouble with CSS Flexbox. Can you explain it?</p>
+            </div>
+            <div class="message ai">
+              <p>Of course! Flexbox is a one-dimensional layout method for arranging items in rows or columns.</p>
+            </div>
+            <div class="message ai">
+              <p>Let me show you an example:</p>
+              <pre><code>.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}</code></pre>
+            </div>
+            <div class="message ai typing">
+              <div class="typing-indicator">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <div class="chat-input">
+            <input type="text" placeholder="Ask your question...">
+            <button><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mentors Section -->
+  <section id="mentors">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Human Mentorship</h2>
+        <p class="section-subtitle">Connect with industry experts for personalized guidance and career advice through one-on-one sessions.</p>
+      </div>
+      
+      <div class="mentors-grid">
+        <div class="mentor-card">
+          <div class="mentor-photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgx3Rwb9MjYNWkxr5xQeXj1FxxETC1eRoljQ&s" alt="Mentor Anita verma">
+            <span class="status-indicator online"></span>
+          </div>
+          <h3>Anita Verma</h3>
+          <span class="mentor-role">React Specialist</span>
+          <p>Former Facebook engineer with 8+ years experience building scalable applications with React and Redux.</p>
+          <div class="mentor-details">
+            <div class="mentor-stats">
+              <div class="stat">
+                <i class="fas fa-star"></i>
+                <span>4.9/5</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-user-graduate"></i>
+                <span>312 Students</span>
+              </div>
+            </div>
+            <button class="btn btn-sm">Book Session</button>
+          </div>
+        </div>
+        
+        <div class="mentor-card">
+          <div class="mentor-photo">
+            <img src="https://as2.ftcdn.net/jpg/04/43/76/97/1000_F_443769757_yuogO3BLmOdcuIJksw4xQ5b04Jl8GRV9.jpg" alt="Mentor Deepak Kumar">
+            <span class="status-indicator"></span>
+          </div>
+          <h3>Deepak Kumar</h3>
+          <span class="mentor-role">Blockchain Expert</span>
+          <p>Blockchain consultant for Fortune 500 companies with deep expertise in smart contracts and DeFi.</p>
+          <div class="mentor-details">
+            <div class="mentor-stats">
+              <div class="stat">
+                <i class="fas fa-star"></i>
+                <span>4.8/5</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-user-graduate"></i>
+                <span>178 Students</span>
+              </div>
+            </div>
+            <button class="btn btn-sm">Book Session</button>
+          </div>
+        </div>
+        
+        <div class="mentor-card">
+          <div class="mentor-photo">
+            <img src="https://topmentor.com/wp-content/uploads/2023/09/online-coaching-indian-male-tutor-making-video-call-with-laptop-headset_bzzt.jpg" alt="Mentor Vikram Singh">
+            <span class="status-indicator online"></span>
+          </div>
+          <h3>Vikram Singh</h3>
+          <span class="mentor-role">Full-Stack Developer</span>
+          <p>Startup founder and CTO with expertise in scaling applications from zero to millions of users.</p>
+          <div class="mentor-details">
+            <div class="mentor-stats">
+              <div class="stat">
+                <i class="fas fa-star"></i>
+                <span>4.9/5</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-user-graduate"></i>
+                <span>243 Students</span>
+              </div>
+            </div>
+            <button class="btn btn-sm">Book Session</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="booking-modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h3>Book a Session</h3>
+          <form id="booking-form">
+            <div class="form-field">
+              <label for="session-topic">Topic for Discussion</label>
+              <select id="session-topic">
+                <option value="">Select a topic</option>
+                <option value="code-review">Code Review</option>
+                <option value="career-advice">Career Advice</option>
+                <option value="technical-problem">Technical Problem</option>
+                <option value="project-planning">Project Planning</option>
+              </select>
+            </div>
+            <div class="date-time-selector">
+              <div class="form-field">
+                <label>Select Date</label>
+                <div class="date-grid">
+                  <button type="button" class="date-btn">Today</button>
+                  <button type="button" class="date-btn">Tomorrow</button>
+                  <button type="button" class="date-btn">Sep 18</button>
+                  <button type="button" class="date-btn">Sep 19</button>
+                  <button type="button" class="date-btn">Sep 20</button>
+                </div>
+              </div>
+              <div class="form-field">
+                <label>Select Time</label>
+                <div class="time-grid">
+                  <button type="button" class="time-btn">9:00 AM</button>
+                  <button type="button" class="time-btn">11:00 AM</button>
+                  <button type="button" class="time-btn">2:00 PM</button>
+                  <button type="button" class="time-btn">4:00 PM</button>
+                  <button type="button" class="time-btn">6:00 PM</button>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="cta-banner">
+        <div class="cta-content">
+          <h3>Need more personalized guidance?</h3>
+          <p>Our mentors are available for one-on-one sessions to help with complex projects, career advice, and technical interviews.</p>
+        </div>
+        <a href="#" class="btn btn-primary mentor-program-btn">Join Mentor Program</a>
+      </div>
+    </div>
+    <div class="section-divider">
+      <div class="divider-shape alt"></div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section id="tech-stack">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Development Team</h2>
+        <p class="section-subtitle">Meet the talented engineers who built UpSpire from the ground up.</p>
+      </div>
+      <div class="team-members">
+        <div class="team-member">
+          <div class="member-photo">
+            <img src="https://static.vecteezy.com/system/resources/previews/036/151/780/non_2x/illustration-cartoon-of-a-cute-girl-standing-and-smiling-while-dressed-in-colorful-and-casual-clothes-vector.jpg" alt="Priya Sharma">
+          </div>
+          <h3>Priya Sharma</h3>
+          <span class="member-role">Lead Developer</span>
+          <p>Full-stack developer with expertise in React and Node.js. Passionate about creating intuitive user experiences.</p>
+          <div class="member-social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="member-photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL8ZBv2b6KBUWUeQLZdI7D4B2ZFwUIxn6o-g&s" alt="Parthik Mangal">
+          </div>
+          <h3>Parthik Mangal</h3>
+          <span class="member-role">Backend Engineer</span>
+          <p>Creative designer with a keen eye for aesthetics and user-centered design principles. Transforms concepts into beautiful interfaces.</p>
+          <div class="member-social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="member-photo">
+            <img src="https://en.pimg.jp/104/546/933/1/104546933.jpg" alt="Rishu Prasad">
+          </div>
+          <h3>Rishu Prasad</h3>
+          <span class="member-role">Frontend Engineer</span>
+          <p>Database and infrastructure specialist focusing on performance optimization and scalable architecture.</p>
+          <div class="member-social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        
+        <div class="team-member">
+          <div class="member-photo">
+            <img src="https://thumbs.dreamstime.com/b/basic-rgb-basic-rgb-219903843.jpg" alt="Ayush ">
+          </div>
+          <h3>Ayush</h3>
+          <span class="member-role">AI Specialist</span>
+          <p>Machine learning expert responsible for developing the AI Professor and personalized learning algorithms.</p>
+          <div class="member-social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats">
+    <div class="container">
+      <div class="stats-header">
+        <h2>Our Impact in Numbers</h2>
+        <p>Join thousands of students who are transforming their careers with UpSpire</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-count="5000">0</div>
+          <div class="stat-label">Beta Users</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="100">0</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="24">0</div>
+          <div class="stat-label">Hours of Support</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="99">0</div>
+          <div class="stat-label">Satisfaction Rate</div>
+          <div class="stat-suffix">%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Transform Your Career?</h2>
+        <p>Join UpSpire today and start your journey towards becoming a skilled developer or blockchain expert.</p>
+        <div class="cta-actions">
+          <a href="#" class="btn btn-primary btn-large">Get Started <i class="fas fa-arrow-right"></i></a>
+          <a href="#" class="btn btn-outline">Learn More <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>UpSpire is your gateway to mastering web development and blockchain technology. Our platform combines cutting-edge AI with real-world projects to provide a comprehensive learning experience.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#courses">Learning Path</a></li>
+            <li><a href="#ai-professor">AI Professor</a></li>
+            <li><a href="#mentors">Mentors</a></li>
+            <li><a href="#tech-stack">Developers</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@UpSpire.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 UpSpire. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
